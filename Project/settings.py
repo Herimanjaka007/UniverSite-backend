@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
-    
 ]
 
 MIDDLEWARE = [
@@ -56,7 +55,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 # Data render type,authentication
 REST_FRAMEWORK = {
-    # "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
+   
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
