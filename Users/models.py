@@ -13,7 +13,7 @@ class CustomUser(AbstractUser):
     """
 
     profil_picture = models.ImageField(upload_to="profil_picture", default="profilpic.png")
-    type_user = models.CharField(max_length=10, choices=TYPE_USER, default="Etudiant")
+    type_user = models.CharField(max_length=10, choices=TYPE_USER, default="Universite")
     adress = models.CharField(max_length=100, blank=True)
     phone_number = models.CharField(
         max_length=20, blank=True, validators=[MinLengthValidator(10)]
