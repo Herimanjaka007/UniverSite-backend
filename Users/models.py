@@ -12,7 +12,7 @@ class CustomUser(AbstractUser):
     User Model
     """
 
-    profil_picture = models.ImageField(upload_to="media", default="profilpic.png")
+    profil_picture = models.ImageField(upload_to="profil_picture", default="profilpic.png")
     type_user = models.CharField(max_length=10, choices=TYPE_USER, default="Etudiant")
     adress = models.CharField(max_length=100, blank=True)
     phone_number = models.CharField(
